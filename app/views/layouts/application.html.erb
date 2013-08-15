@@ -7,6 +7,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	
+	
+	<p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
 <!-- This is the common layout of all the pages, so in order to render the page itself, we use the word yield -->
 	<div class="navbar navbar-fixed-top">
 		<div class="navbar-inner">
@@ -21,6 +25,7 @@
 	
 	<div class="container">
 		<%= yield %>
-	</div>
+	</div> 
+
 </body>
 </html>
